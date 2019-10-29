@@ -22,3 +22,28 @@ and does the following:
 import sys
 import calendar
 from datetime import datetime
+
+
+def get_month_and_year():
+    month = input("Please select the month:")
+    year = input("Please select the year:")
+    try:
+        if year != "" and month != "":
+            year = int(year)
+            month = int(month)
+        elif year != "":
+            year = int(year)
+        elif month != "":
+            month = int(month)
+
+        if month == "" and year == "":
+            return calendar.month(datetime.today().year, datetime.today().month)
+        elif month != "" and year == "":
+            return calendar.month(datetime.today().year, month)
+        else:
+            return calendar.month(year, month)
+    except:
+        print('\033[91m THE PROGRAM EXPECTS MONTH TO BE A NUMBER GIVEN IN THIS FORMAT <MM>\nAND YEAR TO BE A NUMBER GIVEN IN THIS FORMAT <YYYY> \033[0m')
+
+
+print(get_month_and_year())
