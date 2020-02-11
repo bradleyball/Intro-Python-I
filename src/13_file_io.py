@@ -21,6 +21,7 @@ with open('/Users/mr.ball/Documents/coding/lambda/python/python-intro/Intro-Pyth
 c = open('bar.txt', 'w+')
 for i in range(3):
     c.write("Added MORE TEXT WOOOOOAAAH\n ")
+
 c.close()
 r = open('/Users/mr.ball/Documents/coding/lambda/python/python-intro/Intro-Python-I/bar.txt', 'r')
 print(r.read())
