@@ -9,9 +9,9 @@ https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
 # Print all the contents of the file, then close the file
 
 # YOUR CODE HERE
-# with open('/Users/mr.ball/Documents/coding/lambda/python/python-intro/Intro-Python-I/src/foo.txt') as f:
-#     read_data = f.read()
-#     print(read_data)
+with open('/Users/mr.ball/Documents/coding/lambda/python/python-intro/Intro-Python-I/src/foo.txt') as f:
+    read_data = f.read()
+    print(read_data)
 
 
 # Open up a file called "bar.txt" (which doesn't exist yet) for
